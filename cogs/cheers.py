@@ -1,6 +1,7 @@
 import discord
 from discord.ext import commands
 import random as r
+import re
 
 
 class Cheers:
@@ -11,7 +12,7 @@ class Cheers:
 
     @client.event
     async def on_message(self, message):
-        if message.content.startswith('yay'):
+        if message.content.startswith(re.IGNORECASE('yay', 'YAY', 'yay!', 'YAY!')):
 
             cheers = [
             "HOORAH!",
