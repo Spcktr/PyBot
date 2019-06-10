@@ -19,6 +19,8 @@ or
 
 ```ddg3==0.6.6```
 
+For music playback:
+
 ```PyNaCl```
 
 ```libops0```
