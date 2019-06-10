@@ -1,10 +1,7 @@
 import discord
 from discord.ext import commands
 import os
-import subprocess
 import aiohttp
-import random
-import json
 import credentials
 
 client = commands.Bot(command_prefix = ".")
