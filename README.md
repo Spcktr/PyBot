@@ -13,8 +13,6 @@ or
 
 ```python3 -m pip install -U https://github.com/Rapptz/discord.py/archive/rewrite.zip#egg=discord.py[voice]```
 
-```pip install git+https://github.com/abenassi/Google-Search-API```
-
 ```aiohttp==<3.4.4```
 
 ```websockets==6.0```
