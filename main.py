@@ -2,6 +2,7 @@ import discord
 from discord.ext import commands
 import os
 import aiohttp
+import json
 import credentials
 
 client = commands.Bot(command_prefix = ".")
@@ -15,7 +16,8 @@ intial_extensions = [
                     'cogs.worldclock',
                     'cogs.audio',
                     'cogs.puns',
-                    'cogs.cheers'
+                    'cogs.cheers',
+                    'cogs.games'
                     ]
 
 # bot is alive
