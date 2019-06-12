@@ -2,6 +2,7 @@
 
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/Spcktr/PyBot.svg)
 ![GitHub](https://img.shields.io/github/license/spcktr/pybot.svg)
+![GitHub top language](https://img.shields.io/github/languages/top/spcktr/pybot.svg)
 [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
 ![Maintenance](https://img.shields.io/maintenance/yes/2019.svg)
 
