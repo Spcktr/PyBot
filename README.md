@@ -48,12 +48,14 @@ Commands are prefixed with '.' period
 | .serverlist | Lists current game servers & Status  |
 | .pingit | Pings a server, checks up or down |
 | .play URL | Plays clip from youtube/twitch/other media .help for more commands |
+| .pricecheck | Retreives current steam price for a game (use full game name for now) |
 | .weather <args> [args] | Current weather |
 |  yay | Response with a random cheer!    |
 
 
 #### Todo
 
+- [ ] Add Fuzzy string matching to game price searching
 - [x] Add Eightball function(removed)
 - [x] Add bitcoin prices(AUD/USD)
 - [x] Add weather
