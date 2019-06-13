@@ -14,7 +14,7 @@ Discord bot made in python. Contact Waka#1920 If you need help or want to make s
 ##### **Python 3.5.3 or higher is required**
 
 
-Discord.py Rewrite Branch (for python >3.6)
+Discord.py Rewrite Branch (for python >3.5)
 
 ```pip3 install -U git+https://github.com/Rapptz/discord.py@rewrite#egg=discord.py[voice]```
 
