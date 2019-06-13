@@ -6,7 +6,7 @@
 [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
 ![Maintenance](https://img.shields.io/maintenance/yes/2019.svg)
 
-Discord bot made in python
+Discord bot made in python. Contact Waka#1920 If you need help or want to make suggestions.
 
 
 #### Requirements
