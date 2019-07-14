@@ -17,7 +17,8 @@ intial_extensions = [
                     'cogs.audio',
                     'cogs.puns',
                     'cogs.cheers',
-                    'cogs.games'
+                    'cogs.games',
+                    'cogs.roulette'
                     ]
 
 # bot is alive
