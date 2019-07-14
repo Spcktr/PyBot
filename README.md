@@ -6,6 +6,8 @@
 [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
 ![Maintenance](https://img.shields.io/maintenance/yes/2019.svg)
 
+---
+
 Discord bot made in python. Contact Waka#1920 If you need help or want to make suggestions.
 
 
@@ -52,6 +54,7 @@ Commands are prefixed with '.' period
 | .pingit | Pings a server, checks up or down |
 | .play URL | Plays clip from youtube/twitch/other media .help for more commands |
 | .pricecheck | Retreives current steam price for a game (use full game name for now) |
+| .r4chan | randomly selects image & thread from 4chan (NSFW/NSFL)|
 | .weather <args> [args] | Current weather |
 |  yay | Response with a random cheer!    |
 
@@ -73,3 +76,8 @@ Commands are prefixed with '.' period
 
 - [ ] Youtube Search
 - [ ] 'Has started streaming' notification
+
+---
+
+#### Contribs
+[4chan roulette code u/Memekip](https://www.reddit.com/r/Python/comments/ccrh6o/i_just_made_the_most_5050_script_ever_it_selects/)
