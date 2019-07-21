@@ -23,10 +23,10 @@ class Weather:
         """
         if len(arg1) >= 1:
             url = 'http://api.openweathermap.org/data/2.5/weather?q={0},{1}&appid={2}'.format(
-                arg0, arg1, WEATHER)
+                arg0, arg1, credentials.WEATHER)
         else:
             url = 'http://api.openweathermap.org/data/2.5/weather?q={0}&appid={1}'.format(
-                arg0, WEATHER)
+                arg0, credentials.WEATHER)
         async with aiohttp.ClientSession() as session:
             raw_response = await session.get(url)
             response = await raw_response.text()
