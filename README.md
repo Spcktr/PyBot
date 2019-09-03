@@ -37,9 +37,7 @@ For music playback:
 ```libops0```
 
 ```ffmpeg```
-
-#### Usage
-
+```youtube_dl```
 
 ##### Commands
 
@@ -57,7 +55,11 @@ Commands are prefixed with '.' period
 | .r4chan | randomly selects image & thread from 4chan (NSFW/NSFL)|
 | .weather <args> [args] | Current weather |
 |  yay | Response with a random cheer!    |
+  
+#### Known Issues
 
+##### Playback not/no longer working. 
+If playback is not longer working, please update youtube_dl as it needs to periodically update security certs then try again.
 
 #### Todo
 
