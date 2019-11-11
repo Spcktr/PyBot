@@ -17,7 +17,6 @@ intial_extensions = [
                     'cogs.audio',
                     'cogs.puns',
                     'cogs.cheers',
-                    'cogs.games',
                     'cogs.roulette'
                     ]
 
