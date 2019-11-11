@@ -5,7 +5,7 @@ import time
 import os
 
 
-class WorldClock:
+class WorldClock(commands.Cog):
     def __init__(self, client):
         self.client = client
 
@@ -30,7 +30,7 @@ class WorldClock:
             color=3447003
         )
         embed.set_author(name="Current Time")
-        embed.set_footer(text="Via .clock | Server time: {0}".format(t.datetime.utcnow().strftime("%H:%M")))
+        embed.set_footer(text="Via .clock | Server time: {0}".format(t.datetime.now().strftime("%H:%M")))
 
         for zone, flag in zip(zones, flags):
             os.environ['TZ'] = zone

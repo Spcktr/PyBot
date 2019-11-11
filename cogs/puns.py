@@ -3,7 +3,7 @@ from discord.ext import commands
 import random as r
 
 
-class Puns:
+class Puns(commands.Cog):
     def __init__(self, client):
         self.client = client
 

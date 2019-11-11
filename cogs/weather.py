@@ -6,14 +6,17 @@ import datetime
 import credentials
 
 
-class Weather:
+class Weather(commands.Cog):
     def __init__(self, client):
         self.client = client
 
+    # current weather
+
+
 # rewrite
-# check if arg is string or int
-# use url that works with arg type
-# print output based on the arg type used
+ #check if arg is string or int
+ #use url that works with arg type
+ #print output based on the arg type used
 
     @commands.command(brief='Current weather', pass_context=True)
     async def weather(self, ctx, arg0, arg1=""):
@@ -22,21 +25,19 @@ class Weather:
         If your location is two words, eg 'port maquarie' surround the location in quotes
         """
         if len(arg1) >= 1:
-            url = 'http://api.openweathermap.org/data/2.5/weather?q={0},{1}&appid={2}'.format(
-                arg0, arg1, credentials.WEATHER)
+            url = 'http://api.openweathermap.org/data/2.5/weather?q={0},{1}&appid={2}'.format(arg0, arg1, credentials.WEATHER)
         else:
-            url = 'http://api.openweathermap.org/data/2.5/weather?q={0}&appid={1}'.format(
-                arg0, credentials.WEATHER)
+            url = 'http://api.openweathermap.org/data/2.5/weather?q={0}&appid={1}'.format(arg0, credentials.WEATHER)
         async with aiohttp.ClientSession() as session:
             raw_response = await session.get(url)
             response = await raw_response.text()
             response = json.loads(response)
-
             #temp_celcius = response['main']['temp']-273.15
             await ctx.channel.send("Here is the forcast " + ctx.message.author.mention
-                                   + "\nCurrent weather for {0}: \nIt is {1} \nCurrent temp: {2}°C \nHumidity: {3}%"
-                                   .format(response['name'], response['weather'][0]['description'],
-                                           round(response['main']['temp'] - 273.15), response['main']['humidity']))
+                                    + "\nCurrent weather for {0}: \nIt is {1} \nCurrent temp: {2}°C \nHumidity: {3}%"
+                                    .format(response['name'],response['weather'][0]['description'],
+                                    round(response['main']['temp']-273.15),response['main']['humidity']))
+
 
 
 def setup(client):

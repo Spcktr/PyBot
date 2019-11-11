@@ -5,7 +5,7 @@ import datetime
 import ddg3
 
 
-class Utilities:
+class Utilities(commands.Cog):
     def __init__(self, client):
         self.client = client
 
@@ -18,6 +18,9 @@ class Utilities:
         r = ddg3.query("'{0}'".format(args))
         result_type = ''
         result_type = r.type
+        #answer results
+        #answer_text = r.results[0].text
+        #answer_url = r.results[0].url
 
         #disambiguation results
         result_text = r.related[0].text
@@ -28,8 +31,8 @@ class Utilities:
             color=3447003,
             title='Here are your results',
         )
-        embed.set_footer(text="Via .search @ {0} | Results via DuckDuckGo"
-                            .format(datetime.datetime.now().strftime("%H:%M")))
+        embed.set_footer(text="Via .search @ {0} | Results via DuckDuckGo \
+                            If any issues contact Waka#1920".format(datetime.datetime.now().strftime("%H:%M")))
 
         if result_type is 'answer':
             embed.add_field(name="__" + "Search Results" + "__", value="URL: {0} \n {1}" \

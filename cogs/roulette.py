@@ -6,8 +6,8 @@ import time
 import requests
 import random
 
-# code converted from https://www.reddit.com/r/Python/comments/ccrh6o/i_just_made_the_most_5050_script_ever_it_selects/
-class I4chan:
+
+class I4chan(commands.Cog):
     def __init__(self, client):
         self.client = client
 
@@ -63,6 +63,7 @@ class I4chan:
         # Assemble and return the urls
         imageurl = 'https://is2.4chan.org/' + board + '/' + image
         thread = 'https://boards.4chan.org/' + board + '/thread/' + str(thread)
+        # return [ imageurl , thread ]
         await ctx.channel.send(imageurl + ' ' + thread)
 
 
