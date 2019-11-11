@@ -18,11 +18,11 @@ Discord bot made in python. Contact Waka#1920 If you need help or want to make s
 
 Discord.py Rewrite Branch (for python >3.5)
 
-```pip3 install -U git+https://github.com/Rapptz/discord.py@rewrite#egg=discord.py[voice]```
+```pip3 install -U discord.py[voice]```
 
 or
 
-```python3 -m pip install -U https://github.com/Rapptz/discord.py/archive/rewrite.zip#egg=discord.py[voice]```
+```python3 -m pip install -U discord.py[voice]```
 
 ```aiohttp==<3.4.4```
 
@@ -34,7 +34,7 @@ For music playback:
 
 ```PyNaCl```
 
-```libops0```
+```libopus0```
 
 ```ffmpeg```
 ```youtube_dl```
