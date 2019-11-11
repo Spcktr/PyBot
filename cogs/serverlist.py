@@ -4,7 +4,7 @@ import subprocess
 import os
 
 
-class Servers:
+class Servers(commands.Cog):
     def __init__(self, client):
         self.client = client
 
