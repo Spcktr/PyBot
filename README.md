@@ -24,7 +24,7 @@ or
 
 ```python3 -m pip install -U discord.py[voice]```
 
-```aiohttp==<3.4.4```
+```aiohttp==3.4.4```
 
 ```websockets==6.0```
 
@@ -45,13 +45,15 @@ Commands are prefixed with '.' period
 
 | Command | Reponse  |
 | -------- | -------- |
-| .bitcoin     | Get bitcoin prices |
 | .help  |  Shows help message |
+| .btc     | Get bitcoin prices |
+| .coinlist     | Get top 10 cryptocoin prices |
+| .clock | displays world clock times |
 | .search | Search DuckDuckGo for results |
 | .serverlist | Lists current game servers & Status  |
-| .pingit | Pings a server, checks up or down |
+| .ping | Pings a server, checks up or down |
 | .play URL | Plays clip from youtube/twitch/other media .help for more commands |
-| .pricecheck | Retreives current steam price for a game (use full game name for now) |
+| .pun | displays random groan inducing pun |
 | .r4chan | randomly selects image & thread from 4chan (NSFW/NSFL)|
 | .weather <args> [args] | Current weather |
 |  yay | Response with a random cheer!    |
@@ -63,7 +65,7 @@ If playback is not longer working, please update youtube_dl as it needs to perio
 
 #### Todo
 
-- [ ] Add Fuzzy string matching to game price searching
+~~- [ ] Add Fuzzy string matching to game price searching~~
 - [x] Add Eightball function(removed)
 - [x] Add bitcoin prices(AUD/USD)
 - [x] Add weather
