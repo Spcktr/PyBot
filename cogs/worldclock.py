@@ -11,6 +11,8 @@ class WorldClock(commands.Cog):
 
     @commands.command(brief='Current world times', pass_context=True)
     async def clock(self,ctx):
+        # country/time zones (in TZ format)
+        # see: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
         zones = [
             'GMT',
             'Australia/Sydney',
@@ -18,6 +20,7 @@ class WorldClock(commands.Cog):
             'America/New_York',
             'Asia/Dubai'
         ]
+        # emoji flags, in order for each entry above
         flags = [
         ':flag_gb:',
         ':flag_au:',
@@ -27,11 +30,13 @@ class WorldClock(commands.Cog):
         ]
         embed = discord.Embed(
         description="Current time around the world",
+            # change the embed colour here
             color=3447003
         )
         embed.set_author(name="Current Time")
         embed.set_footer(text="Via .clock | Server time: {0}".format(t.datetime.now().strftime("%H:%M")))
 
+        #zip the two lists and show the times with flags
         for zone, flag in zip(zones, flags):
             os.environ['TZ'] = zone
             time.tzset()
