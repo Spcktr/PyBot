@@ -23,7 +23,7 @@ class Servers(commands.Cog):
         # Server listing
         gServer0 = os.system("ping -c 1 minecraft.example.com")
         if gServer0 == 0:
-            server_response = ":large_blue_circle:"
+            server_response = ":green_circle:"
         else:
             server_response = ":red_circle:"
         embed.add_field(name="Minecraft", value="**Pack:** Feed the Beast - Infinity Evolved \
@@ -42,9 +42,9 @@ class Servers(commands.Cog):
         """
         r = os.system("ping -c 1 {0}".format(arg1))
         if r == 0:
-            await ctx.channel.send("The service {0} is running".format(arg1))
+            await ctx.channel.send(":green_circle: The service {0} is running".format(arg1))
         else:
-            await ctx.channel.send("The service {0} doesn't seem to be working at the moment".format(arg1))
+            await ctx.channel.send(":red_circle: The service {0} doesn't seem to be working at the moment".format(arg1))
 
 
 def setup(client):
