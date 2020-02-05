@@ -28,12 +28,14 @@ class Utilities(commands.Cog):
 
         embed = discord.Embed(
             description="Search results for {0}, {1}".format(args, ctx.message.author.mention),
+            # change color to match other embeds
             color=3447003,
             title='Here are your results',
         )
-        embed.set_footer(text="Via .search @ {0} | Results via DuckDuckGo \
-                            If any issues contact Waka#1920".format(datetime.datetime.now().strftime("%H:%M")))
+        # footer message
+        embed.set_footer(text="Via .search @ {0} | Results via DuckDuckGo".format(datetime.datetime.now().strftime("%H:%M")))
 
+        # select which output is received and display it in the embed
         if result_type is 'answer':
             embed.add_field(name="__" + "Search Results" + "__", value="URL: {0} \n {1}" \
                             .format(r.results[0].url, r.results[0].text))
