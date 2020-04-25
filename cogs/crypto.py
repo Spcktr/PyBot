@@ -41,6 +41,11 @@ class Crypto(commands.Cog):
                         .format(str(price), au_response['prices']['btc']['bid']))
         await ctx.channel.send(embed=embed)
 
+
+    ############
+    # This command now requires an API key from coinmarketcap
+    ############
+
     # cryptocoin list
     @commands.command(Brief="List current coin prices", pass_context=True)
     async def coinlist(self, ctx): # change coinlist to suit command style
