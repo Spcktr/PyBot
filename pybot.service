@@ -1,0 +1,12 @@
+[Unit]
+Description=Pybot Discord bot
+After=network.target
+
+[Service]
+User=$USER
+WorkingDirectory=~/Pybot
+ExecStart=/usr/bin/python3 main.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
