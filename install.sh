@@ -16,4 +16,5 @@ mv credentials--blank.py credentials.py
 echo 'Done!'
 
 echo 'Add your Discord TOKEN to the credentials file!'
+echo 'Edit the pybot.service file and move to /etc/systemd/system/'
 echo 'Then to run execute "python3 main.py"'
