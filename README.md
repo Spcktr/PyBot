@@ -1,14 +1,13 @@
 # Pybot
-
-![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/Spcktr/PyBot.svg)
+[![GitHub issues](https://img.shields.io/github/issues/Spcktr/PyBot)](https://github.com/Spcktr/PyBot/issues)
 ![GitHub](https://img.shields.io/github/license/spcktr/pybot.svg)
-![GitHub top language](https://img.shields.io/github/languages/top/spcktr/pybot.svg)
 [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
-![Maintenance](https://img.shields.io/maintenance/yes/2019.svg)
+[![GitHub license](https://img.shields.io/github/license/Spcktr/PyBot)](https://github.com/Spcktr/PyBot/blob/master/LICENSE)
+![Maintained](https://img.shields.io/badge/Maintained-Yes-orange.svg)
 
 ---
 
-Discord bot made in python. Contact Waka#1920 If you need help or want to make suggestions.
+Discord bot made in python.
 
 
 ### Requirements
